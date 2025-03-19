@@ -1,8 +1,8 @@
-**CScape_XF**
+# CScape_XF
 
 CScape_XF is a bioinformatics toolkit for cancer driver prediction, featuring machine learning models to identify driver mutations from genomic data. This repository contains scripts for data processing, feature selection, model comparison, and hyperparameter optimisation.
 
-**Overview**
+## Overview
 CScape_XF analyses annotated variant data (from *DrivR-Base*) to identify potential cancer driver mutations using various machine learning algorithms including XGBoost, SVM, Random Forest, and neural network models. The toolkit provides comprehensive functionality for:
 
 * Data preprocessing and feature extraction
@@ -10,7 +10,10 @@ CScape_XF analyses annotated variant data (from *DrivR-Base*) to identify potent
 * Model comparison and evaluation
 * Hyperparameter tuning
 
-**Project Structure**
+## Project Structure
+
+```bash
+.
 CScape_XF/
 |-- data/                  # Data storage (gitignored for large files)
 |-- models/                # Model implementation modules
@@ -32,8 +35,8 @@ CScape_XF/
 |-- .gitignore             # Git ignore file
 |-- cscape-xf.yml       # Project dependencies
 |__ README.md
-
-**Installation**
+```
+## Installation
 Clone the repository:
 
 ```bash
@@ -41,7 +44,7 @@ git clone https://github.com/amyfrancis97/CScape_XF.git
 cd CScape_XF
 ```
 
-**Dependencies**
+## Dependencies
 CScape_XF requires the following dependencies:
 
 ```bash
@@ -60,28 +63,28 @@ You can install all dependencies using:
 conda env create -f cscape-xf.yml
 ```
 
-**Sample Size Optimisation**
+## Sample Size Optimisation
 Optimise sample size for model training:
 
 ```bash
 python scripts/sample_size_optimisation.py --data_path "/path/to/data.csv" --output_dir "/path/to/outputs" --chunk_size 10000 --sample_sizes 500 1000 5000 10000 20000
 ```
 
-**Feature Selection**
+## Feature Selection
 Identify and select the most important features:
 
 ```bash
 python scripts/feature_selection.py --data_path "/path/to/data.csv" --output_dir "/path/to/outputs" --sample_size 1000
 ```
 
-**Model Comparison**
+## Model Comparison
 Compare performance of different machine learning models:
 
 ```bash
 python scripts/model_comparison.py --input_data "/path/to/processed_data.csv" --output_file "/path/to/model_comparison_res.txt" --models xgb svm rf deepffn ann
 ```
 
-**XGBoost Hyperparameter Optimisation**
+## XGBoost Hyperparameter Optimisation
 Optimise XGBoost model parameters:
 
 
@@ -89,7 +92,7 @@ Optimise XGBoost model parameters:
 python scripts/xgb_optimisation.py --input_data "/path/to/processed_data.csv" --output_dir "/path/to/outputs/" --sample_size 2000 --cv 3
 ```
 
-**Models**
+## Models
 CScape_XF implements and evaluates several machine learning models:
 
 * XGBoost
@@ -98,16 +101,16 @@ CScape_XF implements and evaluates several machine learning models:
 * Deep Feed Forward Network (DeepFFN): Custom neural network architecture
 * Artificial Neural Network (ANN): Basic neural network implementation
 
-**Results**
+## Results
 Results are saved in the specified output directory including:
 
-**Model comparison metrics**
+## Model comparison metrics
 * Feature importance rankings
 * Hyperparameter optimisation results
 * Performance visualisations
 
-**Contributing**
+## Contributing
 Contributions to CScape_XF are welcome. Please feel free to submit a Pull Request.
 
-**Contact**
+## Contact
 For questions or support, please contact amy.francis@bristol.ac.uk
