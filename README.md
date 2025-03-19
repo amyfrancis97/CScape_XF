@@ -12,26 +12,26 @@ CScape_XF analyses annotated variant data (from *DrivR-Base*) to identify potent
 
 **Project Structure**
 CScape_XF/
-├── data/                  # Data storage (gitignored for large files)
-├── models/                # Model implementation modules
-│   ├── ANN.py             # Artificial Neural Network implementation
-│   ├── DeepFFN.py         # Deep Feed Forward Network implementation
-│   ├── metric_results_table.py  # Results formatting utilities
-│   └── train_classifier.py      # Generic classifier training functions
-├── optimisation/          # Hyperparameter optimisation modules
-│   └── tune_params.py     # Parameter tuning functions
-├── outputs/               # Results and output files
-├── plots/                 # Visualisation modules
-│   └── plot_sample_features_vs_metrics.py  # Plotting utilities
-├── scripts/               # Main execution scripts
-│   ├── feature_selection.py        # Feature selection script
-│   ├── model_comparison.py         # Model comparison script
-│   ├── process_data.py             # Data processing script
-│   └──  sample_size_optimisation.py # Sample size optimisation script
-├── utils/                 # Utility functions
-├── .gitignore             # Git ignore file
-├── cscape-xf.yml       # Project dependencies
-└── README.md
+|-- data/                  # Data storage (gitignored for large files)
+|-- models/                # Model implementation modules
+|   |-- ANN.py             # Artificial Neural Network implementation
+|   |-- DeepFFN.py         # Deep Feed Forward Network implementation
+|   |-- metric_results_table.py  # Results formatting utilities
+|   |__ train_classifier.py      # Generic classifier training functions
+|-- optimisation/          # Hyperparameter optimisation modules
+|   |__ tune_params.py     # Parameter tuning functions
+|-- outputs/               # Results and output files
+|-- plots/                 # Visualisation modules
+│   |__ plot_sample_features_vs_metrics.py  # Plotting utilities
+|-- scripts/               # Main execution scripts
+│   |-- feature_selection.py        # Feature selection script
+│   |-- model_comparison.py         # Model comparison script
+│   |-- process_data.py             # Data processing script
+│   |__  sample_size_optimisation.py # Sample size optimisation script
+|-- utils/                 # Utility functions
+|-- .gitignore             # Git ignore file
+|-- cscape-xf.yml       # Project dependencies
+|__ README.md
 
 **Installation**
 Clone the repository:
