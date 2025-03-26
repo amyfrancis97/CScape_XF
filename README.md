@@ -1,6 +1,6 @@
-# CScape_XF
+# CScape-XF
 
-CScape_XF is a bioinformatics toolkit for cancer driver prediction, featuring machine learning models to identify driver mutations from genomic data. This repository contains scripts for data processing, feature selection, model comparison, and hyperparameter optimisation.
+CScape_XF is a bioinformatics repo for cancer driver prediction, featuring machine learning models to identify driver mutations from genomic data. This repository contains scripts for data processing, feature selection, model comparison, and hyperparameter optimisation.
 
 ## Overview
 CScape_XF analyses annotated variant data (from *DrivR-Base*) to identify potential cancer driver mutations using various machine learning algorithms including XGBoost, SVM, Random Forest, and neural network models. The toolkit provides comprehensive functionality for:
