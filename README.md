@@ -16,6 +16,10 @@ CScape_XF analyses annotated variant data (from *DrivR-Base*) to identify potent
 .
 CScape_XF/
 |-- data/                  # Data storage (gitignored for large files)
+|   |-- ICGC_1000G_test.txt.gz     # ICGC/1000G test dataset
+|   |-- gold_standard_test.txt.gz  # Gold standard test dataset
+|   |-- README.md          # Note: COSMIC/GnomAD dataset available at Google Drive link below due to size
+|                          # https://drive.google.com/file/d/1c6DMFuEM6JI43wC5286dc3agNEq_vY52/view?usp=sharing
 |-- models/                # Model implementation modules
 |   |-- ANN.py             # Artificial Neural Network implementation
 |   |-- DeepFFN.py         # Deep Feed Forward Network implementation
@@ -33,7 +37,7 @@ CScape_XF/
 │   |__  sample_size_optimisation.py # Sample size optimisation script
 |-- utils/                 # Utility functions
 |-- .gitignore             # Git ignore file
-|-- cscape-xf.yml       # Project dependencies
+|-- cscape-xf.yml          # Project dependencies
 |__ README.md
 ```
 ## Installation
